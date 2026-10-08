@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jason12236-cmo.github.io/jason-consulting-site/sitemap.xml
