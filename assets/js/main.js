@@ -1,6 +1,6 @@
 /* ===== 網站設定：拿到後填這裡即可 ===== */
 var SITE = {
-  ga4Id: "",        // GA4 評估 ID，例如 "G-XXXXXXXXXX"；留空則不載入追蹤
+  ga4Id: "G-V8RPB8WGL1",        // GA4 評估 ID，例如 "G-XXXXXXXXXX"；留空則不載入追蹤
   bookingUrl: ""    // 預約表單網址（Google 表單或 Calendly）；留空則按鈕改為寫信
 };
 /* ===================================== */
