@@ -70,14 +70,15 @@ var SITE = {
         var el = en.target, to = +el.getAttribute("data-to"), t0 = null;
         function step(ts) {
           if (!t0) t0 = ts;
-          var p = Math.min((ts - t0) / 1200, 1), v = Math.round(to * (1 - Math.pow(1 - p, 3)));
+          var p = Math.min((ts - t0) / 1600, 1), v = Math.round(to * (1 - Math.pow(1 - p, 3)));
           el.textContent = v.toLocaleString("en-US");
           if (p < 1) requestAnimationFrame(step);
         }
         requestAnimationFrame(step);
       });
     }, { threshold: 0.6 });
-    counts.forEach(function (c) { io.observe(c); });
+    /* 先歸零再等滑到時往上跑，避免一開始閃過完成值 */
+    counts.forEach(function (c) { c.textContent = "0"; io.observe(c); });
   }
 
 })();
