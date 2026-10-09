@@ -146,7 +146,7 @@ body{text-wrap:pretty}
 .tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:12px;row-gap:12px}
 /* 同一列的標題與說明各自對齊：標題列高度一致，說明一律從同一條線開始 */
 .tile{background:var(--stone);border-radius:var(--r);padding:20px 18px;display:grid;grid-row:span 2;grid-template-rows:subgrid;row-gap:6px;align-content:start;min-width:0}
-.tile b{align-self:end}
+.tile b{align-self:start}
 .tile b{font-size:17px;font-weight:700}
 .tile p{font-size:14px;line-height:1.7;color:var(--muted)}
 @media (max-width:900px){.vgrid{grid-template-columns:1fr}.banner img{aspect-ratio:16/9}}
