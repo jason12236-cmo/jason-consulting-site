@@ -187,12 +187,11 @@ body{text-wrap:pretty}
 .price span{font-family:var(--f-body);font-size:13px;color:var(--muted)}
 @media (max-width:900px){.price{padding:16px 10px;gap:4px}.plan{padding-inline:16px}}
 .plan .btn{margin-top:auto;align-self:flex-end}
-.swipe-hint{display:none;font-size:13px;color:var(--muted);margin-bottom:12px}
 .note{margin-top:20px;font-size:13px;color:var(--muted)}
+/* 手機：三個方案改為上下排列 */
 @media (max-width:700px){
-  .plans{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:78%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;margin-inline:calc(var(--gutter) * -1);padding-inline:var(--gutter);scroll-padding-inline:var(--gutter);-webkit-overflow-scrolling:touch}
-  .plan{scroll-snap-align:start}
-  .swipe-hint{display:block}
+  .plans{grid-template-columns:1fr;gap:14px}
+  .price b{font-size:24px}
 }
 
 /* ---------- 預約諮詢：左側全部文字資訊＋QR Code，右側形象照；左右底部對齊 ---------- */
