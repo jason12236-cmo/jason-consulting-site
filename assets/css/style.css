@@ -45,6 +45,7 @@ h1,h2,h3{margin:0;text-wrap:balance}
 h1,h2{font-family:var(--f-head);font-weight:700;letter-spacing:.02em}
 h3{font-family:var(--f-body);font-weight:700;letter-spacing:.02em}
 p,ul,ol,figure{margin:0}
+body{text-wrap:pretty}
 .wrap{max-width:var(--max);margin:0 auto;padding-inline:var(--gutter)}
 .skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--paper);padding:8px 14px;z-index:100}
 .skip:focus{left:8px}
@@ -139,7 +140,7 @@ p,ul,ol,figure{margin:0}
 /* ---------- 外聘價值 ---------- */
 .banner{border-radius:var(--r);overflow:hidden;margin-bottom:clamp(32px,4vw,48px);background:var(--deep)}
 .banner img{width:100%;aspect-ratio:21/8;object-fit:cover}
-.vgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(28px,4vw,48px)}
+.vgrid{display:grid;grid-template-columns:1fr;gap:clamp(32px,4vw,48px)}
 .vgroup{display:grid;gap:16px;align-content:start;min-width:0}
 .vgroup h3{font-size:clamp(19px,1.9vw,22px);color:var(--red)}
 .tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
